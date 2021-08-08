@@ -9,21 +9,37 @@
   background-size: cover;
   background-position: center;
 }
-nav {
-  display:flex;
-  position: fixed;
-  background-color: rgb(77, 148, 52);
-  width: 100%;
+#logo {
+    float: left;
 }
-.nav-item {
+.navi a {
+  display: inline-block;
+  margin-left: 70px;
+    font-size: 47px;
+}
+.navi {
   text-align: center;
-  flex-grow: 1;
-  padding: 20px;
-  font-size: 18px;
-  transition: 1s;
 }
 
-a {
+header {
+  background-color: #212121;
+  clear: both;
+  height: 30%;
+}
+.navi a {
   text-decoration: none;
-  color: white;
+  padding: 60px 5px;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+.navi a:hover {
+  background-color: #D32F2F;
+  transition: 0.5s;
+  color: #212121;
+  padding-left: 50px;
+    padding-right: 50px;
+  text-decoration: underline;
+}
+.navi .icon{
+    display: none;
 }
