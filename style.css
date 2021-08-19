@@ -1,10 +1,12 @@
 
+
 * {
   margin: 0;
   padding: 0;
   --main-colour: #00BCD4;
   --accent-colour: #536DFE;
   --background-colour: #BDBDBD;
+  --overlay-colour: #B2EBF2;
 }
 
 #showcase {
@@ -17,9 +19,12 @@
 nav {
   display: flex;
   position: fixed;
+  align-items: baseline;
   background-color: var(--main-colour);
   width: 100%;
   color: white;
+  top: 0;
+  left: 0;
 }
 .nav-item {
   text-align: center;
@@ -50,7 +55,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:  rgba(178, 235, 242, 0.5);
   z-index: 2;
   cursor: pointer;
   align-content: center;
@@ -61,13 +66,22 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
+  font-size: 30px;
+
 }
 
 #navover a {
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
-
+#overlay button {
+  padding: 10px 10px;
+  font-size: 18px;
+  background-color: var(--main-colour);
+  border-radius: 10px;
+  align-items: flex-end;
+  width: 50px;
+}
 
 #underlay {
   display: none;
