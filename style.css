@@ -3,17 +3,67 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   --main-colour: #00BCD4;
   --accent-colour: #536DFE;
   --background-colour: #BDBDBD;
   --overlay-colour: #B2EBF2;
 }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-#showcase {
-  background-image: url('remarks.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+.mySlide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.numtext{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 nav {
@@ -49,6 +99,8 @@ a {
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   top: 0;
@@ -79,7 +131,6 @@ a {
   font-size: 18px;
   background-color: var(--main-colour);
   border-radius: 10px;
-  align-items: flex-end;
   width: 50px;
 }
 
