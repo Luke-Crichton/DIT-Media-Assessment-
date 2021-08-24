@@ -4,23 +4,6 @@ function off() {
   document.getElementById("underlay").style.display = "block";
 
 }
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlide(n) {
-  showSlides(slideIndex += n)
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementByClassName(mySlide)
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-}
 var slideIndex = 0;
 showSlides();
 
