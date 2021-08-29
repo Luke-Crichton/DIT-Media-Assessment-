@@ -155,7 +155,7 @@ a {
 }
 
 footer {
-  background: var(--accent-colour));
+  background: var(--main-colour);
   padding: 20px 0;
 }
 
@@ -177,4 +177,48 @@ iframe {
 }
 .f-col2 {
   flex: 1;
+}
+
+
+#showcase{
+  background-image: url('shopphoto.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#showcase h1 {
+  font-size: 50px;
+}
+#showcase p {
+  font-size: 18px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
 }
