@@ -78,6 +78,7 @@ nav {
   color: white;
   top: 0;
   left: 0;
+  transition: top 0.3s;
 }
 .nav-item {
   text-align: center;
@@ -98,6 +99,50 @@ a {
   color: white;
 }
 
+.sidepanel {
+  width: 0;
+  height: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--background-colour);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+.sidepanel .xbtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+
 #overlay {
   position: fixed;
   display: flex;
@@ -111,6 +156,7 @@ a {
   right: 0;
   bottom: 0;
   background-color:  rgba(178, 235, 242, 0.5);
+  overflow-x: hidden;
   z-index: 2;
   cursor: pointer;
   align-content: center;
@@ -129,12 +175,12 @@ a {
   padding: 10px 20px;
 }
 
-#overlay button {
-  padding: 10px 10px;
-  font-size: 18px;
-  background-color: var(--main-colour);
-  border-radius: 10px;
+#overlay #closebtn {
   width: 50px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 #underlay {
@@ -199,10 +245,24 @@ iframe {
   font-size: 18px;
 }
 
+#skishop {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
   text-align: center;
+  padding: 20px;
+}
+.card img {
+  width: 100%;
 }
 .price {
   color: grey;
@@ -211,7 +271,7 @@ iframe {
 .card button {
   border: none;
   outline: 0;
-  padding: 12px;
+  padding: 20px;
   color: white;
   background-color: #000;
   text-align: center;
