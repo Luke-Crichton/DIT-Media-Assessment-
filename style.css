@@ -78,6 +78,7 @@ nav {
   color: white;
   top: 0;
   left: 0;
+  z-index: 1;
   transition: top 0.3s;
 }
 .nav-item {
@@ -99,9 +100,10 @@ a {
   color: white;
 }
 
+
 .sidepanel {
   width: 0;
-  height: 250px;
+  height: 100vh;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -110,6 +112,7 @@ a {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+
 }
 .sidepanel a {
   padding: 8px 8px 8px 32px;
@@ -129,16 +132,22 @@ a {
   font-size: 36px;
   margin-left: 50px;
 }
-.openbtn {
-  display: none;
+#openbtn {
+  display: block;
   font-size: 20px;
   cursor: pointer;
   background-color: #111;
   color: white;
   padding: 10px 15px;
   border: none;
+  top: 0;
+  right: 0;
+  height: 60px;
+  z-index: initial;
+  position: fixed;
 }
-.openbtn:hover {
+
+#openbtn:hover {
   background-color: #444;
 }
 
