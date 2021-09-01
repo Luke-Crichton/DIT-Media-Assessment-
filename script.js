@@ -17,26 +17,3 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 5000);
 }
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navigation1").style.top = "0";
-    document.getElementById("openbtn").style.display = "none";
-  } else {
-    document.getElementById("navigation1").style.top = "-80px";
-    document.getElementById("openbtn").style.display = "block";
-
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-
-
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
-}

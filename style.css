@@ -100,6 +100,9 @@ a {
   color: white;
 }
 
+.sidenav {
+  display: none;
+}
 
 .sidepanel {
   width: 0;
@@ -290,4 +293,14 @@ iframe {
 }
 .card button:hover {
   opacity: 0.7;
+}
+
+
+@media and (max-width: 1300px) {
+  .sidenav {
+    display: block;
+  }
+  .navigation1 {
+    display: none;
+  }
 }

@@ -8,12 +8,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="navigation">
-      <div class="nav-item"><a href="index.html">HOME</a></div>
-      <div class="nav-item"><a href="#">SKI SHOP</a></div>
-      <div class="nav-item"><a href="#">THE PROS</a></div>
-      <div class="nav-item"><a href="#">WEATHER</a></div>
-    </nav>
+  <nav id="navigation1">
+    <div class="nav-item"><a href="index.html">HOME</a></div>
+    <div class="nav-item"><a href="shop.html">SKI SHOP</a></div>
+    <div class="nav-item"><a href="#">THE PROS</a></div>
+    <div class="nav-item"><a href="#">WEATHER</a></div>
+  </nav>
+  <div class="sidenav">
+    <button id="openbtn" onclick="openNav()">&#9776; Menu</button>
+    <div id="navigation2">
+      <div class="sidepanel" id="mySidepanel">
+        <a href="javascript:void(0)" class="xbtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="shop.html">SKI SHOP</a>
+        <a href="#">THE PROS</a>
+        <a href="#">WEATHER</a>
+      </div>
+    </div>
+  </div>
     <div id="showcase">
       <h1>SKI SHOP</h1>
       <p>Grab some of the best gear for you to hit the slopes in style.</p>
