@@ -266,7 +266,6 @@ iframe {
   padding: 20px;
 }
 
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
@@ -293,6 +292,15 @@ iframe {
 }
 .card button:hover {
   opacity: 0.7;
+}
+
+#proinfo {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  padding: 20px;
 }
 
 
