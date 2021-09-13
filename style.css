@@ -279,18 +279,22 @@ iframe {
   color: grey;
   font-size: 22px;
 }
-.card .button {
-  font-size: 18px;
-  text-decoration: none;
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: var(--background-colour);
-  transition: 1s;
-}
-.card .button:hover {
+.btn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
   cursor: pointer;
-  background-color: var(--accent-colour);
-  transition: 1s ease;
+  width: 100%;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.btn:hover {
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 #proinfo {
