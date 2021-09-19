@@ -347,6 +347,12 @@ iframe {
   background-size: cover;
   background-attachment: fixed;
 }
+.gap-fill3 {
+  background-image: url("tannerhall-min.jpg");
+  height: 300px;
+  background-size: cover;
+  background-attachment: fixed;
+}
 #showcasepro {
   background-image: url('cp3-min.jpg');
   height: 100vh;
