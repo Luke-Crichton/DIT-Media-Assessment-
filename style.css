@@ -183,6 +183,7 @@ a {
 }
 
 .text {
+  text-align: center;
   padding: 40px;
   font-size: 22px;
   margin: 20px 0;
@@ -215,7 +216,7 @@ iframe {
   flex: 1;
 }
 
-
+/*Shop CSS*/
 #showcase{
   background-image: url('shopphoto-min.jpg');
   height: 100vh;
@@ -246,7 +247,6 @@ iframe {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: var(--background-colour);
   margin: auto;
   text-align: center;
   height: 750px;
@@ -277,6 +277,7 @@ iframe {
   transition: 0.5s;
 }
 
+/*Pros CSS*/
 #proinfo {
   margin: 0 auto;
   width: 80%;
@@ -341,6 +342,36 @@ iframe {
   font-size: 18px;
 }
 
+/*Ski NZ CSS*/
+#showcaseskinz {
+  background-image: url('freeride-min.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#showcaseskinz h1 {
+  font-size: 50px;
+}
+#showcaseskinz p {
+  font-size: 18px;
+}
+.text h1 {
+  text-align: center;
+}
+.text img {
+  width: 100%;
+}
+
+
+
+
+/*Media Queries*/
 @media only screen and (max-width: 600px) {
   .sidenav {
     display: block;
