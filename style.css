@@ -18,8 +18,7 @@ h1, h2, h3 {
   --background-colour: #BDBDBD;
   --overlay-colour: #B2EBF2;
 }
-
-
+/* Home page CSS*/
 .slideshow-container {
   position: relative;
   margin: auto;
@@ -44,40 +43,7 @@ h1, h2, h3 {
   top: 0;
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  position: absolute;
-  bottom: 8px;
-
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .2}
-  to {opacity: .5}
-}
-
-@keyframes fade {
-  from {opacity: .2}
-  to {opacity: .5}
-}
-
+/*Navigation bar CSS*/
 nav {
   display: flex;
   position: fixed;
@@ -110,6 +76,7 @@ a {
   font-family: 'Roboto Slab', serif;
 }
 
+/*Mobile navigation CSS*/
 .sidenav {
   display: none;
 }
@@ -164,7 +131,7 @@ a {
   background-color: #444;
 }
 
-
+/*Over and Underlay CSS*/
 #overlay {
   position: fixed;
   display: flex;
@@ -209,7 +176,7 @@ a {
   display: none;
   transition: 0.5s;
 }
-
+/*Card CSS*/
 .wrapper {
   width: 65%;
   margin: 0 auto;
@@ -222,6 +189,7 @@ a {
   background-color: var(--background-colour);
 }
 
+/*Footer CSS*/
 footer {
   background: var(--main-colour);
   padding: 20px 0;
@@ -278,6 +246,7 @@ iframe {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--background-colour);
   margin: auto;
   text-align: center;
   height: 750px;
