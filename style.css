@@ -3,7 +3,7 @@
 p {
   font-family: 'Overpass', sans-serif;
 }
-h1 {
+h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
 }
 
@@ -337,6 +337,12 @@ iframe {
 }
 .gap-fill {
   background-image: url("thovex-min.jpg");
+  height: 300px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.gap-fill2 {
+  background-image: url("glen2-min.png");
   height: 300px;
   background-size: cover;
   background-attachment: fixed;
