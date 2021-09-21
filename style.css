@@ -286,7 +286,7 @@ iframe {
 }
 
 /*Pros CSS*/
-#proinfo {
+.proinfo {
   margin: 0 auto;
   width: 80%;
   display: grid;
