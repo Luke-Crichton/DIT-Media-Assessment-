@@ -14,9 +14,10 @@ h1, h2, h3 {
   padding: 0;
   box-sizing: border-box;
   --main-colour: #00BCD4;
-  --accent-colour: #536DFE;
+  --accent-colour: #5468FE;
   --background-colour: #BDBDBD;
   --overlay-colour: #B2EBF2;
+  --secondarytext-colour: #757575;
 }
 /* Home page CSS*/
 .slideshow-container {
@@ -111,7 +112,7 @@ a {
   display: block;
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: var(--main-colour);
   color: white;
   padding: 10px 15px;
   border: none;
@@ -120,10 +121,11 @@ a {
   height: 60px;
   z-index: initial;
   position: fixed;
+  transition: 1s;
 }
 
 #openbtn:hover {
-  background-color: #444;
+  background-color: var(--accent-colour);
 }
 
 /*Over and Underlay CSS*/
@@ -139,7 +141,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:  rgba(178, 235, 242, 0.5);
+  background-color:  rgba(178, 235, 242, 0.7);
   overflow-x: hidden;
   z-index: 2;
   cursor: pointer;
@@ -160,12 +162,14 @@ a {
 }
 
 #overlay #closebtn {
-  width: 50px;
+  width: 300px;
   position: absolute;
   top: 20px;
-  right: 45px;
-  font-size: 60px;
+  right: 0px;
+  font-size: 30px;
 }
+
+
 
 #underlay {
   display: none;
@@ -179,6 +183,7 @@ a {
 
 .text {
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 40px;
   font-size: 22px;
   margin: 20px 0;
@@ -225,10 +230,16 @@ iframe {
   color: white;
 }
 #showcase h1 {
-  font-size: 50px;
+  font-size: 36px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 20px;
 }
 #showcase p {
   font-size: 18px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 20px;
 }
 
 #skishop {
@@ -241,17 +252,18 @@ iframe {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--background-colour);
   margin: auto;
   text-align: center;
-  height: 750px;
+  height: 760px;
+  margin-top: 20px;
   padding: 20px;
 }
 .card img {
   width: 100%;
 }
 .price {
-  color: grey;
+  color: var(--secondarytext-colour);
   font-size: 22px;
 }
 .btn {
@@ -260,15 +272,16 @@ iframe {
   display: inline-block;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: var(--main-colour);
   text-align: center;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  border-radius: 20px;
   transition: 0.5s;
 }
 .btn:hover {
-  opacity: 0.7;
+  background-color: var(--accent-colour);
   transition: 0.5s;
 }
 
@@ -283,12 +296,19 @@ iframe {
 }
 .procard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--background-colour);
   margin: auto;
   text-align: center;
   padding: 20px;
 }
 .procard img {
   width: 100%;
+}
+.procard p {
+  padding: 10px;
+}
+.procard h3 {
+  padding: 10px;
 }
 .ski {
   color: black;
@@ -298,7 +318,7 @@ iframe {
 .ski:hover {
   text-decoration: underline;
   transition: 0.5s;
-  color: red;
+  color: var(--accent-colour);
 }
 .gap-fill {
   background-image: url("thovex-min.jpg");
@@ -331,10 +351,16 @@ iframe {
   color: white;
 }
 #showcasepro h1 {
-  font-size: 50px;
+  font-size: 36px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 20px;
 }
 #showcasepro p {
   font-size: 18px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 20px;
 }
 
 /*Ski NZ CSS*/
@@ -351,10 +377,16 @@ iframe {
   color: white;
 }
 #showcaseskinz h1 {
-  font-size: 50px;
+  font-size: 36px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 20px;
 }
 #showcaseskinz p {
   font-size: 18px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 20px;
 }
 .text h1 {
   text-align: center;
@@ -371,7 +403,11 @@ iframe {
   .sidenav {
     display: block;
   }
-  .navigation1 {
+  nav {
     display: none;
+  }
+  #skishop {
+    grid-template-columns: 1fr;
+    padding: 50px;
   }
 }
